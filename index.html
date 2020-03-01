@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5a0b92c0ac.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="card m-5">
+                        <!--CARD HEADER-->
+                        <div class="card-header">
+                            <h2>Payment form example</h2>
+                        </div>
+                        <!--CARD BODY-->
+                        <div class="card-body">
+                            <div class="alert alert-danger" role="alert">
+                                Some fields are missing
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-5">
+                                    <span>Card #</span>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"></div>
+                                    </div>
+                                    <input type="number" class="form-control" placeholder="XXXXXXXXXX"
+                                        aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="col-3">
+                                    <span>CVC #</span>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"></div>
+                                    </div>
+                                    <input type="number" class="form-control" placeholder="0000" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                                <div class="col-4">
+                                    <span>Amount</span>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"></div>
+                                    </div>
+                                    <input type="number" class="form-control" placeholder="Amount" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-6">
+                                    <span>First Name</span>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"></div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                                <div class="col-6">
+                                    <span>Last Name</span>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"></div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col-6">
+                                    <span>City</span>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"></div>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="XXXXXXXXXX"
+                                        aria-label="Username" aria-describedby="basic-addon1">
+                                </div>
+                                <div class="col-3 mt-3">
+                                    <span>State</span>
+                                    <div class="input-group mb-3">
+                                        <select class="custom-select" id="inputGroupSelect01">
+                                            <option selected>Select a state</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <span>Postal Code</span>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"></div>
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>We accept</p>
+                                    <div class="bg-secondary col-7 border rounded p-2"> <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                            value="mastercard" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1"><i
+                                                class="fab fa-cc-mastercard"></i></label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                        value="visa" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2"><i
+                                                class="fab fa-cc-visa"></i></label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline3" name="customRadioInline1"
+                                        value="dinersclub" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline3"><i
+                                                class="fab fa-cc-diners-club"></i></label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline4" name="customRadioInline1"
+                                        value="paypal" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline4"><i
+                                                class="fab fa-cc-paypal"></i></label>
+                                    </div></div>
+
+                                </div>
+                                <div class="col-6">
+                                    <span>Message</span>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend"></div>
+                                    </div>
+                                    <textarea class="form-control" rows="3"></textarea>
+                                    <small>Add any notes here</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!--CARD FOOTER-->
+                        <div class="card-footer d-flex justify-content-end">
+                            <a href="#" class="btn btn-secondary mx-1">Cancel</a>
+                            <a href="#" class="btn btn-primary mx-1">Send</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
